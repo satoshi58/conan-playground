@@ -10,6 +10,14 @@ conan 1.x
 
 Install, build and create pkg according to your update scenario.
 
+## Default pkg dependency
+
+- alpha -> None
+- beta -> alpha
+- gamma -> alpha
+- delta -> beta and gamma
+- epsilon -> alpha and delta
+
 ## Example of scenario
 
 minor version conflict 

@@ -7,8 +7,8 @@ class EpsilonConan(ConanFile):
     generators = "cmake"
 
     def requirements(self):
-        self.requires("alpha/1.0.0")
-        self.requires("delta/1.0.0")
+        self.requires("alpha/[^1.0.0]")
+        self.requires("delta/[^1.0.0]")
 
     def build(self):
         cmake = CMake(self)

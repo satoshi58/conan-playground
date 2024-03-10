@@ -7,8 +7,8 @@ class DeltaConan(ConanFile):
     generators = "cmake"
 
     def requirements(self):
-        self.requires("beta/1.0.0")
-        self.requires("gamma/1.0.0")
+        self.requires("beta/[^1.0.0]")
+        self.requires("gamma/[^1.0.0]")
 
     def build(self):
         cmake = CMake(self)
